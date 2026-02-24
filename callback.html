@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<b0dy>
+
+
+    <h1>Javascript callback</h1>
+
+
+</b0dy>
+
+<script>
+
+//A callback is a function passed as an argument to another function.
+
+function greeting(name){
+    alert(`Hello, ${name}`);
+}
+
+
+function processUserInput(callback){
+    const name = prompt("Please enter your name. ");
+    callback(name);
+}
+
+
+processUserInput(greeting);
+
+</script>
+</html>
